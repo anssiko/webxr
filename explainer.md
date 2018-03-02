@@ -786,8 +786,6 @@ partial interface Navigator {
 //
 
 [SecureContext, Exposed=Window] interface XRDevice : EventTarget {
-  readonly attribute boolean external;
-
   Promise<void> supportsSession(optional XRSessionCreationOptions parameters);
   Promise<XRSession> requestSession(optional XRSessionCreationOptions parameters);
 };
